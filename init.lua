@@ -1,4 +1,5 @@
 return {
+
     -- Configure AstroNvim updates
     updater = {
         remote = "origin", -- remote to use
@@ -63,13 +64,11 @@ return {
             }
         }
     },
-
     -- This function is run last and is a good place to configuring
     -- augroups/autocommands and custom filetypes also this just pure lua so
     -- anything that doesn't fit in the normal config locations above can go here
     polish = function()
-
-        vim.filetype.add {extension = {njk = 'jimja.html'}}
+        vim.filetype.add {extension = {njk = 'jinja.html'}}
         -- Set up custom filetypes
         -- vim.filetype.add {
         --   extension = {

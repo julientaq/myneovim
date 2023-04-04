@@ -5,6 +5,7 @@
 -- automatically pick-up stored data by this setting.)
 return {
     -- first key is the mode
+    --
     n = {
         -- second key is the lefthand side of the map
         -- mappings seen under group name "Buffer"
@@ -32,7 +33,7 @@ return {
     },
     t = {
         -- setting a mapping to false will disable it
-        -- ["<esc>"] = false,
+        -- ["jk"] = false
     },
     v = {
         ["<"] = {"<gv", desc = "Unindent and keep the location of the carret"},
